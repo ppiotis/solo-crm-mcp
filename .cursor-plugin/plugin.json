@@ -1,0 +1,15 @@
+{
+  "name": "solo-crm",
+  "displayName": "Solo CRM",
+  "version": "1.0.0",
+  "description": "A minimal, local CRM for solopreneurs: contacts, deals, follow-ups, activity log, pipeline summary and outreach drafts. Every change is previewed and needs your confirmation. Data stays in one JSON file on your machine.",
+  "author": { "name": "Paris Piotis", "url": "https://github.com/ppiotis" },
+  "homepage": "https://github.com/ppiotis/solo-crm-mcp",
+  "repository": "https://github.com/ppiotis/solo-crm-mcp",
+  "license": "MIT",
+  "logo": "logo.svg",
+  "keywords": ["crm", "pipeline", "sales", "follow-ups", "solopreneur", "freelancer"],
+  "category": "productivity",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

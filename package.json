@@ -1,0 +1,52 @@
+{
+  "name": "solo-crm-mcp",
+  "version": "1.0.0",
+  "description": "Minimal local CRM MCP server for solopreneurs: contacts, deals, follow-ups, activity log, pipeline summary and outreach drafts. Every write is preview-then-confirm. No network.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Paris Piotis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppiotis/solo-crm-mcp"
+  },
+  "homepage": "https://github.com/ppiotis/solo-crm-mcp#readme",
+  "keywords": [
+    "mcp",
+    "crm",
+    "pipeline",
+    "solopreneur",
+    "grok-bot",
+    "cursor-plugin"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "solo-crm-mcp": "dist/stdio.js",
+    "solo-crm-mcp-http": "dist/serve-http.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    ".mcp.json",
+    "plugin.json",
+    ".cursor-plugin",
+    "logo.svg"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/stdio.js",
+    "start:http": "node dist/serve-http.js",
+    "test": "npm run build && vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

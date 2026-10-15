@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "solo-crm": {
+      "command": "npx",
+      "args": ["-y", "github:ppiotis/solo-crm-mcp"]
+    }
+  }
+}
