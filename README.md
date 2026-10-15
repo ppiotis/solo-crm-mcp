@@ -57,7 +57,7 @@ Requires Node.js 20+. Add the plugin, or put this in `.mcp.json`:
   "mcpServers": {
     "solo-crm": {
       "command": "npx",
-      "args": ["-y", "github:ppiotis/solo-crm-mcp"],
+      "args": ["-y", "https://github.com/ppiotis/solo-crm-mcp/archive/refs/tags/v1.0.0.tar.gz"],
       "env": { "SOLO_CRM_PATH": "/absolute/path/to/crm.json" }
     }
   }
